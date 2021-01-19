@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="shortcut icon" href="A.jpeg">
+    <title>Store</title>
+    <style>
+        .mainmenubtn {
+            background-color: rgb(91, 91, 255);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-child {
+            display: none;
+            background-color: black;
+            min-width: 100px;
+        }
+        .dropdown-child a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-child {
+            display: block;
+        }
+    </style>
+  </head>
+  <body class="mt-5">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">Pandawa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="dropdown">
+            <button class="mainmenubtn">Main Menu</button>
+            <div class="dropdown-child">
+                <a href="home.html">Home</a>
+                <a href="login.html">login</a>
+                <a href="sign in.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <section id="login" class="login">
+        <div class="container">
+          <div class="row pt-4 mb-4">
+            <div class="col text-center">
+              <h2>Sign In</h2>
+            </div>
+          </div>
+  
+          <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <ul class="list-group"><h2>Location</h2>
+                    <li class="list-group-item">Banyuwangi-JawaTimur</li>
+                  </ul>
+              <div class="card text-white bg-info mb-3 text-center">
+                <div class="card-body">
+                    <img src="A.jpeg" width="50%" class="rounded-circle img-thumbnail">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6">
+    <form action="Index.html" method="POST">
+        <fieldset>
+            <legend>Sign In</legend>
+            <div class="form-group">
+                <label>Nama Depan       :</label>
+                <label><input type="text" name="nama depan"  class="form-control" placeholder="nama depan..."/></label>
+            </div>
+            <div class="form-group">
+                <label>Nama Belakang    :</label>
+                <label><input type="text" name="nama belakang"  class="form-control" placeholder="nama belakang..."/></label>
+            </div>
+            <div class="form-group">
+                <label>Username         :</label>
+                <label><input type="text" name="username"  class="form-control" placeholder="username..."/></label>
+            </div>
+            <div class="form-group">
+                <label>Email            :</label>
+                <label><input type="email" name="email"  class="form-control" placeholder=" your email..."/></label>
+            </div>
+            <div class="form-group">
+                <label>Password         :</label>
+                <label><input type="password" name="password"  class="form-control" placeholder="password..."/></label>
+            </div>
+            <p>
+                <label>Jenis Kelamin</label>
+                <label><input type="radio" name="jenis_kelamin" value="laki-laki"/>Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="perempuan"/>Perempuan</label>
+            </p>
+            <p>
+                <label>Agama</label>
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                    <option value="none">none</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Biografi</label>
+                <label>:<textarea name="biografi"></textarea></label>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="sign in" />
+            </p>
+        </fieldset>
+    </form>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

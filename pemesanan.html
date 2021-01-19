@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="shortcut icon" href="A.jpeg">
+    <title>Store</title>
+    <script>
+    function oppoa12() {
+    var oppoa12= 2200000;
+    oppoa12 = parseInt(document.getElementById("oppoa12").value)*oppoa12;
+    return oppoa12;   
+    }
+    function oppoa9() {
+    var oppoa9 = 3000000;
+    oppoa9 = (document.getElementById("oppoa9").value)*oppoa9;
+    return oppoa9;   
+    }
+    function oppoa31() {
+    var oppoa31 = 2500000;
+    oppoa31 = (document.getElementById("oppoa31").value)*oppoa31;
+    return oppoa31;   
+    }
+    function oppoa1k() {
+    var  oppoa1k = 1500000;
+    oppoa1k = (document.getElementById("oppoa1k").value)*oppoa1k;
+    return oppoa1k;  
+    }
+    function output() {
+    var tobay = document.getElementById("tobay").value;
+    totran = oppoa12() + oppoa9() + oppoa31() + oppoa1k();
+    document.getElementById("totran").innerHTML = totran;
+    kembalian = tobay - totran;
+    document.getElementById("kembali").innerHTML = kembalian;
+    }
+    </script>
+    <style>
+        .mainmenubtn {
+            background-color: rgb(91, 91, 255);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-child {
+            display: none;
+            background-color: black;
+            min-width: 100px;
+        }
+        .dropdown-child a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-child {
+            display: block;
+        }
+    </style>
+  </head>
+  <body class="mt-5">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">Pandawa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="dropdown">
+            <button class="mainmenubtn">Main Menu</button>
+            <div class="dropdown-child">
+                <a href="Index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="pemesanan.html">Pemesanan</a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <section id="pemesanan" class="pesan">
+      <div class="container">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Pemesanan</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="card text-white bg-info mb-3 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Harga Produk</h5>
+                <p class="card-text">OPPO A12 = RP 2.200.000</p>
+                <p class="card-text">OPPO A9  = RP 3.000.000</p>
+                <p class="card-text">OPPO A31 = RP 2.500.000</p>
+                <p class="card-text">OPPO A1K = RP 1.500.000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form>
+                <tr>
+                    <td>OPPO A12</td>
+                    <td>:<input type="number" id="oppoa12" class="form-control" ></td>
+                </tr>
+                
+                <tr>
+                    <td>OPPO A9</td>
+                    <td>:<input type="number" id="oppoa9" class="form-control" ></td>
+                </tr>
+                
+                <tr>
+                    <td>OPPO A31</td>
+                    <td>:<input type="number" id="oppoa31" class="form-control" ></td>
+                </tr>
+                
+                <tr>
+                    <td>OPPO A1K</td>
+                    <td>:<input type="number" id="oppoa1k" class="form-control"></td>
+                </tr>
+            <tr>
+               <td>Total Transaksi</td> 
+               <td>:<input type="text" id="totran" class="form-control"></td> 
+            </tr>
+            <tr>
+                <td>Total Bayar</td>
+                <td>:<input type="number" id="tobay" class="form-control"></label></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button onclick="output()">Proses</button></td>
+                <td></td>
+            </tr><br>
+            <tr>
+                <td>Kembalian</td>
+                <td>: Rp.<label id="kembali"></label></td>
+            </tr>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col text-center">
+            <p>Copyright 2020</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
